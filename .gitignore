@@ -37,17 +37,10 @@ coverage.xml
 # Translations
 *.mo
 
-# Mr Developer
-.mr.developer.cfg
-.project
-.pydevproject
-
-# Rope
-.ropeproject
-
 # Django stuff:
 *.log
 *.pot
+mysite/mysite/settings.py
 
 # Sphinx documentation
 docs/_build/
@@ -56,23 +49,6 @@ docs/_build/
 # =========================
 # Operating System Files
 # =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Icon must ends with two \r.
-Icon
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
 
 # Windows
 # =========================
