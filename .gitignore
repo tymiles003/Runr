@@ -37,11 +37,6 @@ coverage.xml
 # Translations
 *.mo
 
-# Django stuff:
-*.log
-*.pot
-mysite/mysite/settings.py
-
 # Sphinx documentation
 docs/_build/
 
