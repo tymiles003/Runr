@@ -19,5 +19,8 @@ def create_app(config_name):
     db.init_app(app)
     
     #Extra stuff here: Attach routes and custom pages
+    #Imports are always interpreted as absolute, hence the need for the '.' below.
+    from .main import main as main_blueprint
+    app.register_blueprint(main_blueprint)
     
     return app

@@ -1,7 +1,9 @@
-#http://legacy.python.org/dev/peps/pep-0420/
-from flask import Flask
+from datetime import datetime
+from flask import render_template, session, redirect, url_for
+from . import main
+from ..models  import User
 
-def create_app(config_name=''):
-    app = Flask(__name__)
-
-    return app
+@main.route('/', methods=['GET', 'POST'])
+def index():
+    users = User.query.all()    
+    return render_template('base.html', users=users)

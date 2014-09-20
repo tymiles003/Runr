@@ -1,7 +1,7 @@
-#http://legacy.python.org/dev/peps/pep-0420/
-from flask import Flask
+from flask import Blueprint
 
-def create_app(config_name=''):
-    app = Flask(__name__)
+main = Blueprint('main', __name__)
 
-    return app
+#Avoid circular dependency by importing the following files after the main declaration
+from . import views
+from . import errors
