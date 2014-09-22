@@ -1,3 +1,4 @@
+#http://vikku.info/programming/google-maps-v3/draggable-directions/saving-draggable-directions-saving-waypoints-google-directions-google-maps-v3.htm
 from . import db
 
 class User(db.Model):
